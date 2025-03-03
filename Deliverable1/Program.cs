@@ -14,7 +14,7 @@ class Program
         Console.WriteLine("Welcome to the restocking tool.");
 //----------------------------------------------------------------------------------------
 
-        Console.WriteLine("\nHow many Sodas have been sold today? 100 are in stock");
+        Console.WriteLine("How many Sodas have been sold today? 100 are in stock");
         int soldSoda = int.Parse(Console.ReadLine());
 //^^ Create the variable based on the user input, the user tells how many soda cans were sold.
         if (soldSoda <= stockSoda)
@@ -27,7 +27,7 @@ class Program
             Console.WriteLine("That value is too high. Stock not adjusted");
         }
         // This constraint should be 100 - sold soda, the error would be any number beyond 100. 
-        Console.WriteLine("\nHow many Chips have been sold today? 40 are in stock");
+        Console.WriteLine("How many Chips have been sold today? 40 are in stock");
         int soldChips = int.Parse(Console.ReadLine());
 
         if (soldChips <= stockChip)
@@ -40,7 +40,7 @@ class Program
             Console.WriteLine("That value is too high. Stock not adjusted");
         }
         // This constraint is 40 - the sold chips. Anything beyond 40 is impossible. 
-        Console.WriteLine("\nHow many Candy have been sold today? 60 are in stock");
+        Console.WriteLine("How many Candy have been sold today? 60 are in stock");
         int soldCandy = int.Parse(Console.ReadLine());
 
         if (soldCandy <= stockCandy)
@@ -54,7 +54,7 @@ class Program
         }
         //This constraint is 60 - Candy sold. Anything beyond 60 is impossible.
 
-        Console.WriteLine("\nThank you for filling out the values. Here’s what needs to be restocked.");
+        Console.WriteLine("Thank you for filling out the values. Here’s what needs to be restocked.");
 
         if (stockSoda <= sodaRestockVal)// stockSoda <= 100
         {
@@ -69,6 +69,6 @@ class Program
             Console.WriteLine("Candy needs to be restocked");
         }
 //------------------------------Goodbye Message----------------------------------------------------
-        Console.WriteLine("\nGoodbye!");
+        Console.WriteLine("Goodbye!");
     }
 }
